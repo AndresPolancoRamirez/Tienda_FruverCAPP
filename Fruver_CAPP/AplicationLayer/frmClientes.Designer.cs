@@ -28,27 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmClientes));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmClientes));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnFin = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnNew = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.dgvRegistroCliente = new System.Windows.Forms.DataGridView();
-            this.clmTipo_Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmNumero_Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmPrimer_Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmSegundo_Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmPrimer_Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmSegundo_Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmbYear = new System.Windows.Forms.ComboBox();
             this.cmbMonth = new System.Windows.Forms.ComboBox();
             this.cmbDay = new System.Windows.Forms.ComboBox();
@@ -72,6 +58,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbTipo_Documento = new System.Windows.Forms.ComboBox();
+            this.clmTipo_Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmNumero_Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmPrimer_Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmSegundo_Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmPrimer_Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmSegundo_Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnFin = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistroCliente)).BeginInit();
             this.SuspendLayout();
@@ -113,95 +114,9 @@
             this.groupBox1.Controls.Add(this.cmbTipo_Documento);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1323, 785);
+            this.groupBox1.Size = new System.Drawing.Size(1351, 794);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnExit.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(1071, 646);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(121, 66);
-            this.btnExit.TabIndex = 32;
-            this.btnExit.Text = "Exit";
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnCancel.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancel.Location = new System.Drawing.Point(863, 646);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(121, 66);
-            this.btnCancel.TabIndex = 31;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancel.UseVisualStyleBackColor = false;
-            // 
-            // btnFin
-            // 
-            this.btnFin.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnFin.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFin.Image = ((System.Drawing.Image)(resources.GetObject("btnFin.Image")));
-            this.btnFin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFin.Location = new System.Drawing.Point(664, 646);
-            this.btnFin.Name = "btnFin";
-            this.btnFin.Size = new System.Drawing.Size(121, 66);
-            this.btnFin.TabIndex = 30;
-            this.btnFin.Text = "Fin";
-            this.btnFin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFin.UseVisualStyleBackColor = false;
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnSave.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(454, 646);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(121, 66);
-            this.btnSave.TabIndex = 29;
-            this.btnSave.Text = "Save";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnEdit.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
-            this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(262, 646);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(121, 66);
-            this.btnEdit.TabIndex = 28;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEdit.UseVisualStyleBackColor = false;
-            // 
-            // btnNew
-            // 
-            this.btnNew.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnNew.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.Image = ((System.Drawing.Image)(resources.GetObject("btnNew.Image")));
-            this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNew.Location = new System.Drawing.Point(59, 646);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(121, 66);
-            this.btnNew.TabIndex = 27;
-            this.btnNew.Text = "New";
-            this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNew.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
@@ -235,6 +150,8 @@
             // 
             // dgvRegistroCliente
             // 
+            this.dgvRegistroCliente.AllowUserToAddRows = false;
+            this.dgvRegistroCliente.AllowUserToDeleteRows = false;
             this.dgvRegistroCliente.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -253,69 +170,15 @@
             this.clmPrimer_Apellido,
             this.clmSegundo_Apellido,
             this.clmEmail,
+            this.clmTelefono,
             this.clmDireccion});
             this.dgvRegistroCliente.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dgvRegistroCliente.Location = new System.Drawing.Point(11, 480);
             this.dgvRegistroCliente.Name = "dgvRegistroCliente";
-            this.dgvRegistroCliente.Size = new System.Drawing.Size(1240, 146);
+            this.dgvRegistroCliente.ReadOnly = true;
+            this.dgvRegistroCliente.Size = new System.Drawing.Size(1336, 146);
             this.dgvRegistroCliente.TabIndex = 23;
             this.dgvRegistroCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRegistroCliente_CellContentClick);
-            // 
-            // clmTipo_Documento
-            // 
-            this.clmTipo_Documento.HeaderText = "Tipo Documento";
-            this.clmTipo_Documento.Name = "clmTipo_Documento";
-            this.clmTipo_Documento.ReadOnly = true;
-            this.clmTipo_Documento.Width = 150;
-            // 
-            // clmNumero_Documento
-            // 
-            this.clmNumero_Documento.HeaderText = "Numero Documento";
-            this.clmNumero_Documento.Name = "clmNumero_Documento";
-            this.clmNumero_Documento.ReadOnly = true;
-            this.clmNumero_Documento.Width = 150;
-            // 
-            // clmPrimer_Nombre
-            // 
-            this.clmPrimer_Nombre.HeaderText = "Primer Nombre";
-            this.clmPrimer_Nombre.Name = "clmPrimer_Nombre";
-            this.clmPrimer_Nombre.ReadOnly = true;
-            this.clmPrimer_Nombre.Width = 150;
-            // 
-            // clmSegundo_Nombre
-            // 
-            this.clmSegundo_Nombre.HeaderText = "Segundo Nombre";
-            this.clmSegundo_Nombre.Name = "clmSegundo_Nombre";
-            this.clmSegundo_Nombre.ReadOnly = true;
-            this.clmSegundo_Nombre.Width = 150;
-            // 
-            // clmPrimer_Apellido
-            // 
-            this.clmPrimer_Apellido.HeaderText = "Primer Apellido";
-            this.clmPrimer_Apellido.Name = "clmPrimer_Apellido";
-            this.clmPrimer_Apellido.ReadOnly = true;
-            this.clmPrimer_Apellido.Width = 150;
-            // 
-            // clmSegundo_Apellido
-            // 
-            this.clmSegundo_Apellido.HeaderText = "Segundo Apellido";
-            this.clmSegundo_Apellido.Name = "clmSegundo_Apellido";
-            this.clmSegundo_Apellido.ReadOnly = true;
-            this.clmSegundo_Apellido.Width = 150;
-            // 
-            // clmEmail
-            // 
-            this.clmEmail.HeaderText = "Correo Electronico";
-            this.clmEmail.Name = "clmEmail";
-            this.clmEmail.ReadOnly = true;
-            this.clmEmail.Width = 150;
-            // 
-            // clmDireccion
-            // 
-            this.clmDireccion.HeaderText = "Direccion";
-            this.clmDireccion.Name = "clmDireccion";
-            this.clmDireccion.ReadOnly = true;
-            this.clmDireccion.Width = 150;
             // 
             // cmbYear
             // 
@@ -572,7 +435,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(3, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1317, 62);
+            this.label1.Size = new System.Drawing.Size(1345, 62);
             this.label1.TabIndex = 14;
             this.label1.Text = "Registro de Clientes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -584,12 +447,173 @@
             this.cmbTipo_Documento.FormattingEnabled = true;
             this.cmbTipo_Documento.Items.AddRange(new object[] {
             "Cedula",
-            "Tarjeta Identidad"});
+            "Tarjeta Identidad",
+            "Cedula Extranjera",
+            "Pasaporte",
+            "Sin Identificacion"});
             this.cmbTipo_Documento.Location = new System.Drawing.Point(302, 150);
             this.cmbTipo_Documento.Name = "cmbTipo_Documento";
             this.cmbTipo_Documento.Size = new System.Drawing.Size(178, 33);
             this.cmbTipo_Documento.TabIndex = 2;
             this.cmbTipo_Documento.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_Documento_SelectedIndexChanged);
+            // 
+            // clmTipo_Documento
+            // 
+            this.clmTipo_Documento.DataPropertyName = "tipo_documento";
+            this.clmTipo_Documento.HeaderText = "Tipo Documento";
+            this.clmTipo_Documento.Name = "clmTipo_Documento";
+            this.clmTipo_Documento.ReadOnly = true;
+            this.clmTipo_Documento.Width = 150;
+            // 
+            // clmNumero_Documento
+            // 
+            this.clmNumero_Documento.DataPropertyName = "numero_documento";
+            this.clmNumero_Documento.HeaderText = "Numero Documento";
+            this.clmNumero_Documento.Name = "clmNumero_Documento";
+            this.clmNumero_Documento.ReadOnly = true;
+            this.clmNumero_Documento.Width = 150;
+            // 
+            // clmPrimer_Nombre
+            // 
+            this.clmPrimer_Nombre.DataPropertyName = "primer_nombre";
+            this.clmPrimer_Nombre.HeaderText = "Primer Nombre";
+            this.clmPrimer_Nombre.Name = "clmPrimer_Nombre";
+            this.clmPrimer_Nombre.ReadOnly = true;
+            this.clmPrimer_Nombre.Width = 150;
+            // 
+            // clmSegundo_Nombre
+            // 
+            this.clmSegundo_Nombre.DataPropertyName = "segundo_nombre";
+            this.clmSegundo_Nombre.HeaderText = "Segundo Nombre";
+            this.clmSegundo_Nombre.Name = "clmSegundo_Nombre";
+            this.clmSegundo_Nombre.ReadOnly = true;
+            this.clmSegundo_Nombre.Width = 150;
+            // 
+            // clmPrimer_Apellido
+            // 
+            this.clmPrimer_Apellido.DataPropertyName = "primer_apellido";
+            this.clmPrimer_Apellido.HeaderText = "Primer Apellido";
+            this.clmPrimer_Apellido.Name = "clmPrimer_Apellido";
+            this.clmPrimer_Apellido.ReadOnly = true;
+            this.clmPrimer_Apellido.Width = 150;
+            // 
+            // clmSegundo_Apellido
+            // 
+            this.clmSegundo_Apellido.DataPropertyName = "segundo_apellido";
+            this.clmSegundo_Apellido.HeaderText = "Segundo Apellido";
+            this.clmSegundo_Apellido.Name = "clmSegundo_Apellido";
+            this.clmSegundo_Apellido.ReadOnly = true;
+            this.clmSegundo_Apellido.Width = 150;
+            // 
+            // clmEmail
+            // 
+            this.clmEmail.DataPropertyName = "email";
+            this.clmEmail.HeaderText = "Correo Electronico";
+            this.clmEmail.Name = "clmEmail";
+            this.clmEmail.ReadOnly = true;
+            this.clmEmail.Width = 150;
+            // 
+            // clmTelefono
+            // 
+            this.clmTelefono.DataPropertyName = "telefono";
+            this.clmTelefono.HeaderText = "Telefono";
+            this.clmTelefono.Name = "clmTelefono";
+            this.clmTelefono.ReadOnly = true;
+            // 
+            // clmDireccion
+            // 
+            this.clmDireccion.DataPropertyName = "direccion";
+            this.clmDireccion.HeaderText = "Direccion";
+            this.clmDireccion.Name = "clmDireccion";
+            this.clmDireccion.ReadOnly = true;
+            this.clmDireccion.Width = 150;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnExit.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(1071, 646);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(121, 66);
+            this.btnExit.TabIndex = 32;
+            this.btnExit.Text = "Exit";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnCancel.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.Location = new System.Drawing.Point(863, 646);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(121, 66);
+            this.btnCancel.TabIndex = 31;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnFin
+            // 
+            this.btnFin.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnFin.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFin.Image = ((System.Drawing.Image)(resources.GetObject("btnFin.Image")));
+            this.btnFin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFin.Location = new System.Drawing.Point(664, 646);
+            this.btnFin.Name = "btnFin";
+            this.btnFin.Size = new System.Drawing.Size(121, 66);
+            this.btnFin.TabIndex = 30;
+            this.btnFin.Text = "Fin";
+            this.btnFin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFin.UseVisualStyleBackColor = false;
+            this.btnFin.Click += new System.EventHandler(this.btnFin_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnSave.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(454, 646);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(121, 66);
+            this.btnSave.TabIndex = 29;
+            this.btnSave.Text = "Save";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnEdit.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
+            this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEdit.Location = new System.Drawing.Point(262, 646);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(121, 66);
+            this.btnEdit.TabIndex = 28;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEdit.UseVisualStyleBackColor = false;
+            // 
+            // btnNew
+            // 
+            this.btnNew.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnNew.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNew.Image = ((System.Drawing.Image)(resources.GetObject("btnNew.Image")));
+            this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNew.Location = new System.Drawing.Point(59, 646);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(121, 66);
+            this.btnNew.TabIndex = 27;
+            this.btnNew.Text = "New";
+            this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNew.UseVisualStyleBackColor = false;
             // 
             // frmClientes
             // 
@@ -650,6 +674,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clmPrimer_Apellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmSegundo_Apellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmTelefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmDireccion;
 
 

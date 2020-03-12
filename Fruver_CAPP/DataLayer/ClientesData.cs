@@ -52,7 +52,41 @@ namespace DataLayer
                     return false;
                     }
                 }
-   
+
+            public static List<Clientes_Entity> ObtenerClientes()
+            {
+                List<Clientes_Entity> clientes = new List<Clientes_Entity>();
+                MySqlConnection conex = new MySqlConnection();
+
+                conex = ConexionBD();
+
+                conex.Open();
+
+                string sql = "SELECT * FROM tbclientes order by id_Clientes desc";
+                MySqlCommand cmd = new MySqlCommand(sql, conex);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    clientes.Add(CargarCliente(reader));
+                }
+                return clientes;
+            }
+            public static Clientes_Entity CargarCliente(MySqlDataReader reader)
+            {
+                Clientes_Entity cliente = new Clientes_Entity();
+                cliente.tipo_documento = Convert.ToString(reader["TipoDocumento"]);
+                cliente.numero_documento= Convert.ToString(reader["NumeroDocumento"]);
+                cliente.primer_nombre = Convert.ToString(reader["PrimerNombre"]);
+                cliente.primer_apellido = Convert.ToString(reader["PrimerApellido"]);
+                cliente.segundo_nombre = Convert.ToString(reader["SegundoNombre"]);
+                cliente.segundo_apellido = Convert.ToString(reader["SegundoApellido"]);
+                cliente.email = Convert.ToString(reader["Email"]);
+                cliente.direccion = Convert.ToString(reader["Direccion"]);
+                cliente.telefono = Convert.ToString(reader["Telefono"]);
+                return cliente;
+            }
+
         }
 }
 

@@ -14,6 +14,13 @@ namespace AplicationLayer
 {
     public partial class frmClientes : Form
     {
+
+        public void CargarGrilla()
+        {
+            dgvRegistroCliente.AutoGenerateColumns = false;
+            dgvRegistroCliente.DataSource = ClientesBusiness.ObtenerClientes();
+        }
+
         public frmClientes()
         {
             InitializeComponent();
@@ -21,6 +28,7 @@ namespace AplicationLayer
         private void frmClientes_Load(object sender, EventArgs e)
         {
             CargarFechas();
+            CargarGrilla();
         }
 
         public void GuardarBD()
@@ -68,6 +76,7 @@ namespace AplicationLayer
         {
             GuardarBD();
             LimpiarFormulario();
+            CargarGrilla();
         }
 
         private void LimpiarFormulario()
@@ -225,7 +234,7 @@ namespace AplicationLayer
 
             private void btnExit_Click(object sender, EventArgs e)
             {
-                MessageBox.Show("ADIOS CRACK");
+                MessageBox.Show("ADIOS NOVATO");
                 Application.Exit();
             }
 
@@ -242,6 +251,12 @@ namespace AplicationLayer
             private void txtDireccion_TextChanged(object sender, EventArgs e)
             {
 
+            }
+
+            private void btnFin_Click(object sender, EventArgs e)
+            {
+                frmBuscarClientes frm = new frmBuscarClientes();
+                frm.ShowDialog();
             }
 
 

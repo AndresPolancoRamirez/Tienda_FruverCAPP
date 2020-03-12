@@ -14,6 +14,11 @@ namespace BusinessLayer
         {
             return ClientesData.GuardarCliente(cliente);
         }
+        public static List<Clientes_Entity> ObtenerClientes()
+        {
+        return ClientesData.ObtenerClientes();
+
+        }
 
     }
 }
